@@ -1,10 +1,15 @@
 :root {
     --bright-color: rgb(232, 102, 236);
+    /* Make sure to adjust the gradient separately under card-code*/
     --dark-color: rgb(55, 56, 58);
 }
 
 * {
     font-family: 'Courier New', Courier, monospace;
+}
+
+Header {
+    padding-bottom: 30px;
 }
 
 header h1 {
@@ -17,39 +22,48 @@ header h1 {
 header p {
     color: white;
     text-align: center;
+    line-height: 20px;
+    font-style: italic;
 }
 
 body {
     background-color: var(--dark-color);
-    width: 100%;
 }
 
 .deck {
-    justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
-    border: dashed white 1px;
-    margin-left: 6px;
+    border: dashed white 2px;
+    margin-top: 40px;
+    margin-left: 20px;
     color: var(--bright-color);
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    width: 26%;
 }
 
 .card-header {
     background-color: var(--dark-color);
-    border: solid white 1px;
+    border: solid white 2px;
+    border-radius: 6px;
     position: relative;
     width: 80%;
     margin-top: -20px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 180%;
 }
 
 .card-face {
-    padding: 10px;
+    padding-top: -15px;
+    padding-bottom: 15px;
+    width: 90%;
 }
 
 .card-code {
@@ -63,6 +77,22 @@ body {
     padding: 3px;
 }
 
+pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.all {
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
 /* Box Transition Glow */
 .card-header .card-code {
     border-radius: 8px;
@@ -73,4 +103,15 @@ body {
 .card:hover
 .card-header {
     box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+footer {
+    text-align: center;
+    color: var(--bright-color);
+}
+
+span {
+    color: red;
+    font-size: 180%;
+    font-weight: bold;
 }

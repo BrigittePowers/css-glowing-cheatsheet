@@ -10,62 +10,97 @@
 <body>
     <header>
         <h1>CSS Snippet Cheatsheet</h1>
-        <p>Have you ever...?</p>
+        <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Now it has a permanent home.
+            <br>
+            Select any snippet below and it'll automatically select all the code for you to copy.
+        </p> 
+        
     </header>
     <main>
         <section>
             <section class="deck">
                 <div class="card">
-                    <h2 class="card-header">Title</h2>
+                    <h2 class="card-header">Flexbox Row</h2>
                     <div class="card-face">
-                        <p>Explanation goes here!</p>
+                        <p>Creates a flexbox row layout from left-to-right.</p>
                         <div class="card-code">
-                            <p>Code goes here!</p>
+<pre class="all">.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}</pre>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <h2 class="card-header">Title</h2>
+                    <h2 class="card-header">Flexbox Column</h2>
                     <div class="card-face">
-                        <p>Explanation goes here!</p>
+                        <p>Use this to create a Flexbox column layout.</p>
                         <div class="card-code">
-                            <p>Code goes here!</p>
+<pre class="all">.column {
+    display: flex;
+    flex-direction: column;
+}</pre>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <h2 class="card-header">Title</h2>
+                    <h2 class="card-header">CSS Grid Layout</h2>
                     <div class="card-face">
-                        <p>Explanation goes here!</p>
+                        <p>Build a 12-column layout</p>
                         <div class="card-code">
-                            <p>Code goes here!</p>
+<pre class="all">.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}</pre>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <h2 class="card-header">Title</h2>
+                    <h2 class="card-header">Linear Gradients</h2>
                     <div class="card-face">
-                        <p>Explanation goes here!</p>
+                        <p>Creates background linear gradient top-to-bottom.</p>
                         <div class="card-code">
-                            <p>Code goes here!</p>
+<pre class="all">.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+}</pre>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <h2 class="card-header">Title</h2>
+                    <h2 class="card-header">Box Transition Glow</h2>
                     <div class="card-face">
-                        <p>Explanation goes here!</p>
+                        <p>Use transition and box shadows for a custom hover animation.</p>
                         <div class="card-code">
-                            <p>Code goes here!</p>
+<pre class="all">.card-header .card-code {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover
+.card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}</pre>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <h2 class="card-header">Title</h2>
+                    <h2 class="card-header">Wrap Text in a < Pre ></Pre> tag</h2>
                     <div class="card-face">
-                        <p>Explanation goes here!</p>
+                        <p>Explaination goes here!</p>
                         <div class="card-code">
-                            <p>Code goes here!</p>
+<pre class="all">overflow-x: auto;
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+word-wrap: break-word;
+</pre>
                         </div>
                     </div>
                 </div>
@@ -73,9 +108,10 @@
                 <div class="card">
                     <h2 class="card-header">Title</h2>
                     <div class="card-face">
-                        <p>Explanation goes here!</p>
+                        <p>Explaination goes here!</p>
                         <div class="card-code">
-                            <p>Code goes here!</p>
+<pre class="all">code goes here
+</pre>
                         </div>
                     </div>
                 </div>
@@ -83,5 +119,8 @@
             </section>
         </section>
     </main>
+    <footer>
+        <p>Made with <span>♡</span>, headaches, and CSS</p>
+    </footer>
 </body>
 </html>

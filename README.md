@@ -1,9 +1,8 @@
 CSS Snippet Cheat Sheet
 A webpage that will hold a collection of CSS snippets.
 
+Each CSS snippet can be highlighted for copying on click. Layout is available for desktop, tablet, and mobile devices. 
 
-
-* Each CSS snippet should have a card-like layout with the CSS syntax wrapped in an [HTML pre element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre).
 
 * Each CSS snippet can easily be highlighted for copying on click using the [CSS user-select property](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select).
 
