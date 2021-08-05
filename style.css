@@ -1,0 +1,76 @@
+:root {
+    --bright-color: rgb(232, 102, 236);
+    --dark-color: rgb(55, 56, 58);
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header h1 {
+    color: var(--bright-color);
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+}
+
+header p {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: var(--dark-color);
+    width: 100%;
+}
+
+.deck {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: dashed white 1px;
+    margin-left: 6px;
+    color: var(--bright-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-header {
+    background-color: var(--dark-color);
+    border: solid white 1px;
+    position: relative;
+    width: 80%;
+    margin-top: -20px;
+}
+
+.card-face {
+    padding: 10px;
+}
+
+.card-code {
+    /* Linear Gradient*/
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+    color: white;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+/* Box Transition Glow */
+.card-header .card-code {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover
+.card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
